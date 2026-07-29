@@ -11,7 +11,11 @@ const nextConfig = {
       'statics.cdn.200lab.io',
     ],
   },
-  output: 'standalone',
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
